@@ -5,4 +5,4 @@ This script is used to backup the files in the specified directory to the specif
 [tar]
 
 # How to build
-[dart compile exe bin/backup.dart]
+[dart compile exe bin/dir_backup.dart --target-os linux]

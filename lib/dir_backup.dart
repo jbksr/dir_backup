@@ -9,8 +9,11 @@ File get propertiesFile =>
     File('${Directory(Platform.script.path).parent.path}/properties.json');
 
 void run(List<String> arguments) {
-  // loadProperties(backup);
-  // return;
+  if (arguments.isEmpty) {
+    printHelp();
+    return;
+  }
+
   switch (arguments[0]) {
     case '-h':
     case '--help':
