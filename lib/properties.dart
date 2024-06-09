@@ -26,7 +26,7 @@ class Properties {
       this.maxBackups,
       this.maxBackupSize});
 
-  // decode from yaml
+  // decode from json
   factory Properties.fromJson(Map<String, dynamic> json) {
     return Properties(
         sourceDirectory: Directory(json['sourceDirectory']),
@@ -36,7 +36,7 @@ class Properties {
         maxBackupSize: json['maxBackupSize']);
   }
 
-  // encode to yaml
+  // encode to json
   Map<String, dynamic> toJson() {
     return {
       'sourceDirectory': sourceDirectory.path,
